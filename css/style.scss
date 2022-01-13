@@ -1,0 +1,241 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+//-------------------------------------------------------
+
+@font-face {
+    font-family: HarryFont;
+    src: url(../assets/HARRYP__.TTF);
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Martel&display=swap');
+
+.grid-div{
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.add-section{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background-color: brown;
+    color: gold;
+    text-shadow: black 1px 1px 1px;
+    font-weight: bold;
+    border-right: gold 5px ridge;
+    
+    
+    .logo{
+        display:flex;
+        font-size: 2.4em;
+        text-shadow: black 3px 3px 3px;
+        align-items: center;
+        gap: .5em;
+        font-family: harryFont;
+        letter-spacing: 3px;
+        border-bottom: gold 5px double;
+        justify-content: center;
+        
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin-top: 3em;
+        border: gold 5px solid;
+        padding: 1em;
+        box-shadow: black 4px 4px 7px;
+        width: 300px;
+        align-self: center;
+        align-items: center;
+
+        label{
+            font-family: 'Martel', serif;
+            font-size: .9em;
+            letter-spacing: .5px;
+            text-shadow: 2px 2px 2px black; 
+        }
+        
+        
+        input[type=text]{
+            background-color: rgb(240, 189, 122);
+            height: 2em;
+            border-style: none;
+            box-shadow: inset -5px 5px 8px #000000;
+            outline: none;
+            font-family: 'Kaushan Script', cursive;
+            font-size: 1.3em;
+            width: 100%;
+
+            &:hover{
+                cursor: pointer;
+            }
+               
+        }
+
+        .submit{
+            background-color: rgb(100, 28, 28);
+            color: gold;
+            font-family: harryFont;
+            border: gold 2px outset;
+            font-size: 2em;
+            padding: .25em;
+            border-radius: 1em;
+            margin-top: 10px;
+
+            &:hover{
+                cursor: pointer;
+            
+            }
+            
+        }
+
+    }
+
+    .top-lion{
+        height:90px;
+        width:90px;
+        
+    }
+
+    .bottom-lion{
+        height: 170px;
+        width: 170px;
+        align-self: center;
+        margin-top: 30px;
+        border: gold 2px outset;
+        border-radius: 50%;
+        background-color: rgb(100, 28, 28);
+        padding: .3em;
+        box-shadow: black 2px 2px 5px;
+    }
+}
+
+.book-section{
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    gap: 1em;
+    background: rgb(240, 189, 122);
+    padding: 1em;
+
+    .book{
+        display: flex;
+        flex-direction: column;
+        background: none;
+        border: black 2px solid;
+        font-family: 'Kaushan Script', cursive;
+        padding: .5em;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    
+}
+
