@@ -144,7 +144,7 @@ input, select {
         
     }
     
-    form{
+    ul{
         display: flex;
         flex-direction: column;
         gap: 1em;
@@ -180,7 +180,7 @@ input, select {
                
         }
 
-        .submit{
+        .submit1{
             background-color: rgb(100, 28, 28);
             color: gold;
             font-family: harryFont;
@@ -226,6 +226,7 @@ input, select {
     padding: 1em;
 
     .book{
+        transition: 0.5s;
         display: flex;
         flex-direction: column;
         background: none;
@@ -234,8 +235,34 @@ input, select {
         padding: .5em;
         justify-content: space-around;
         align-items: center;
+        cursor: pointer;
+        
+
+        &:hover{
+
+            color: rgba(0, 0, 0, 0);
+            background-image: url(../assets/x.png);
+            background-position: center;
+            background-size: 100px;
+            background-repeat: no-repeat;
+            transition: 0.3s;
+            border: gold 5px ridge;
+            
+        }
     }
 
-    
+}
+
+.x-button{
+
+    display: flex;
+    flex-direction: column;
+    background: none;
+    border: black 2px solid;
+    font-family: 'Kaushan Script', cursive;
+    padding: .5em;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
